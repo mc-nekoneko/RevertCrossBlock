@@ -1,0 +1,10 @@
+name: ${project.name}
+version: ${project.version}
+main: dev.nekoneko.revert.RevertCrossBlock
+api-version: 1.13
+authors: [Nekoneko]
+description: ${project.description}
+website: ${project.url}
+permissions:
+  revertcrossblock.use:
+    default: op
