@@ -6,7 +6,7 @@
 
     <groupId>dev.nekoneko</groupId>
     <artifactId>revert-cross-block</artifactId>
-    <version>1.0</version>
+    <version>1.1</version>
     <packaging>jar</packaging>
 
     <name>RevertCrossBlock</name>

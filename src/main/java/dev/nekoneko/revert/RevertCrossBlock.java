@@ -30,8 +30,6 @@ import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;
 import org.bukkit.block.data.BlockData;
 import org.bukkit.block.data.MultipleFacing;
-import org.bukkit.block.data.type.Fence;
-import org.bukkit.block.data.type.GlassPane;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -83,7 +81,7 @@ public final class RevertCrossBlock extends JavaPlugin implements Listener {
 
         Block clickedBlock = event.getClickedBlock();
         BlockData blockData = clickedBlock.getBlockData();
-        if (blockData instanceof Fence || blockData instanceof GlassPane) {
+        if (blockData instanceof MultipleFacing) {
             MultipleFacing facing = (MultipleFacing) blockData;
             for (BlockFace blockFace : CROSS_FACES) {
                 facing.setFace(blockFace, true);
