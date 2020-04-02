@@ -52,7 +52,7 @@ public final class RevertCrossBlock extends JavaPlugin implements Listener {
         this.loadConfig();
         this.getServer().getPluginManager().registerEvents(this, this);
 
-        new Metrics(this);
+        new Metrics(this, 4770);
     }
 
     private void loadConfig() {
